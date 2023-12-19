@@ -3,23 +3,16 @@
     <header>
       <h1>Task Manager</h1>
     </header>
-    <main>
-      <TaskForm />
-      <TaskList />
+    <main>      
+    <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
-import TaskForm from "@/components/TaskForm.vue";
-import TaskList from "@/components/TaskLists.vue";
 
 export default {
   name: "App",
-  components: {
-    TaskForm,
-    TaskList,
-  },
 };
 </script>
 

@@ -4,6 +4,9 @@
     <ul>
       <li v-for="task in tasks" :key="task._id">{{ task.name }}</li>
     </ul>
+    <router-link to="/">
+      <button>Back to Add Task</button>
+    </router-link>
   </div>
 </template>
 
@@ -46,6 +49,12 @@ export default {
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 4px;
+  }
+  button{
+    background-color: #41b883;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
   }
   </style>
   

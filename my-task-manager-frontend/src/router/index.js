@@ -1,15 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import TaskList from '../components/TaskList.vue';
-import TaskForm from '../components/TaskForm.vue';
-
-const routes = [
-  { path: '/', component: TaskList },
-  { path: '/create', component: TaskForm },
-];
+import TaskForm from '@/components/TaskForm.vue';
+import TaskList from '@/components/TaskLists.vue';
+import { createWebHistory, createRouter } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes: [
+    { path: '/', component: TaskForm },
+    { path: '/task-list', component: TaskList },
+  ],
 });
 
 export default router;

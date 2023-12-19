@@ -6,6 +6,9 @@
       <input type="text" id="taskName" v-model="taskName" required />
       <button type="submit">Add Task</button>
     </form>
+    <router-link to="/task-list">
+      <button>View Task List</button>
+    </router-link>
   </div>
 </template>
 
@@ -44,7 +47,8 @@ export default {
 };
 </script>
   
-  <style scoped>
+
+<style scoped>
   div {
     margin-bottom: 20px;
   }
@@ -70,7 +74,8 @@ export default {
   button {
     background-color: #41b883;
     color: white;
-    padding: 10px;
+    margin-top: 50px;
+    padding: 20px;
     cursor: pointer;
   }
   </style>
